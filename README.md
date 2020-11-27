@@ -11,9 +11,9 @@ In this report I will look at many ways to measure engineering, some of the orig
 
 Lines of Code (LOC)
 
-One of the most basic approaches to measuring Software Engineering is source lines of code. There are two different ways of doing this, the first is physical source lines of code which is simply counting the number of lines of code in the code base. [1]  The second is logical lines of code which attempts to count the number of executable statements. [1]
+One of the most basic approaches to measuring Software Engineering is source lines of code. There are two different ways of doing this, the first is physical source lines of code which is simply counting the number of lines of code in the code base. <sup>[1]</sup>  The second is logical lines of code which attempts to count the number of executable statements. <sup>[1]</sup>
 
-This method of measuring software has been around since the 1960’s[1] and while it has remained a popular metric to assist in measuring software engineering it quickly became apparent that SLOC on its own is an ineffective and misleading measurement. When measuring software by its lines of code you do not account for several important factors, such as the differences and diversity in programming languages and how each one does a task and the simple truth that a long program is not necessarily a complex program. 
+This method of measuring software has been around since the 1960’s <sup>[1]</sup> and while it has remained a popular metric to assist in measuring software engineering it quickly became apparent that SLOC on its own is an ineffective and misleading measurement. When measuring software by its lines of code you do not account for several important factors, such as the differences and diversity in programming languages and how each one does a task and the simple truth that a long program is not necessarily a complex program. 
 
 Examples: Code can be written in many ways
 
@@ -39,18 +39,18 @@ This highlights a key issue with counting lines of code, it is very difficult to
 
 Another example is the difference between a simple Object Orientated Java class and a complex but compact algorithm. When writing Object Orientated programs you can end up with a long piece of software with a lot of basic getter and setter methods that simply just changes one or two values of the object. Writing such a class could take only an hour or two but have hundreds of lines of code, conversely a complicated algorithm that could be crucial to the software system may only be 20-30 lines long but could take several days to develop as it requires the engineer to spend a lot of time figuring out the logic of what they are trying to create rather than just mindlessly writing code.
 
+```
+*"Measuring programming progress by lines of code is like measuring aircraft building progress by weight" - Bill Gates* <sup>[2]</sup>
+```
 
-*"Measuring programming progress by lines of code is like measuring aircraft building progress by weight" - Bill Gates*
-
-
-Source lines of code as a metric is only useful when combined with other measurements, if you impose strict coding practices on your engineers and ensure that everyone is writing the highest quality and most line efficient code they can then it can provide some insight into the complexity of your code base. For example, Windows NT 3.1 has about 5 million source lines of code while windows XP had about 45 million [3], this provides some meaningful information on the scale of these projects and the number of engineers required to create and maintain them.
+Source lines of code as a metric is only useful when combined with other measurements, if you impose strict coding practices on your engineers and ensure that everyone is writing the highest quality and most line efficient code they can then it can provide some insight into the complexity of your code base. For example, Windows NT 3.1 has about 5 million source lines of code while windows XP had about 45 million <sup>[3]</sup>, this provides some meaningful information on the scale of these projects and the number of engineers required to create and maintain them.
 
 
 ABC Method
 
-The ABC software metric was developed as an answer to issues with SLOC, it attempts to solve the problem with a more algorithmic approach that is much less simplistic.[4]
+The ABC software metric was developed as an answer to issues with SLOC, it attempts to solve the problem with a more algorithmic approach that is much less simplistic.<sup>[4]</sup>
 
-ABC values are calculated by counting the number of assignments(A), branches (B) and conditionals (C) and then creating a triplet of these values.[4]
+ABC values are calculated by counting the number of assignments(A), branches (B) and conditionals (C) and then creating a triplet of these values.<sup>[4]</sup>
 
 The following equation is used to calucalte ABC values
 
@@ -59,7 +59,7 @@ The following equation is used to calucalte ABC values
 <ABCvector> = √(a2 + b2 + c2)
 ```
 
-ABC evaluation has different rules depending on the programming language used, this is aimed at creating consistent scores across a range of languages. The goal of ABC is to measure the size of the software in a meaningful by evaluating all parts of the system rather than just lines of code. ABC accounts for things such as conditional operators, assignment operators and important keywords. This means it can tell the difference between the complexity of single lines of code. [4]
+ABC evaluation has different rules depending on the programming language used, this is aimed at creating consistent scores across a range of languages. The goal of ABC is to measure the size of the software in a meaningful by evaluating all parts of the system rather than just lines of code. ABC accounts for things such as conditional operators, assignment operators and important keywords. This means it can tell the difference between the complexity of single lines of code. <sup>[4]</sup>
 
 An example of using ABC to measure software:
 
@@ -93,22 +93,22 @@ Humanyze was founded in 2010 and aims to measure software engineering by analysi
 
 They achieve this using a badge that monitors employees at work. The Humanyze badge uses location data and speech recognition to gather data about employees. It can determine where employees are spending most of their time through out, they day, which departments are interacting with each other and the nature of these interactions. The Humanyze badge does not record conversations between employees but instead uses technology to analysis things such as the tone of voice of the people talking to try and determine the mood and nature of the conversation. This allows it to tell if employees are getting along well or are hostile to each other.
 
-The badge can track exactly what you have spent your time doing throughout the day, where you have been and who you interact with most. All this data is then analysed by Artificial Intelligence to tell employers if their employee dynamic is “healthy” [5]. They produce metrics about how happy employees are, how engaged they are and how productive they are. 
+The badge can track exactly what you have spent your time doing throughout the day, where you have been and who you interact with most. All this data is then analysed by Artificial Intelligence to tell employers if their employee dynamic is “healthy” <sup>[5]</sup>. They produce metrics about how happy employees are, how engaged they are and how productive they are. 
 
-Humanyze claim their badges protect employee privacy in several different ways [6]. Firstly, and most importantly they do not record any content from email, messages or voice calls [6].  Data is analysed based on things like tone of voice rather than the actual content of the call, emails and messaging are used mostly to determine which departments employees interact with the most and which ones are the largest source of problem [6]. Humanyze also does not provide any identifiable information to employers. The data is not presented on a person by person basis instead employers are given an overview of the entire company with aggregate information about the performance of the whole office [6]. Humanyze does however have a personal dashboard where you can see your own information and while employers can’t access this, they could request employees give them this data themselves [6]. Humanyze also does not track employees when they are in the bathroom and does all location tracking via beacons and not GPS. [6]
+Humanyze claim their badges protect employee privacy in several different ways.<sup>[6]</sup> Firstly, and most importantly they do not record any content from email, messages or voice calls.<sup>[6]</sup>  Data is analysed based on things like tone of voice rather than the actual content of the call, emails and messaging are used mostly to determine which departments employees interact with the most and which ones are the largest source of problem.<sup>[6]</sup> Humanyze also does not provide any identifiable information to employers. The data is not presented on a person by person basis instead employers are given an overview of the entire company with aggregate information about the performance of the whole office.<sup>[6]</sup> Humanyze does however have a personal dashboard where you can see your own information and while employers can’t access this, they could request employees give them this data themselves.<sup>[6]</sup> Humanyze also does not track employees when they are in the bathroom and does all location tracking via beacons and not GPS. <sup>[6]</sup>
 
-Humanyze aims to use this data to build a more productive and better functioning work force. They believe by understanding how employees are interacting they can find ways to increase productivity and eliminate major stress factors. In an interview with Business Insider [7]. CEO Ben Waber gave an example of how they determined that employees spent less time calling each other if they had a little bit of extra face to face time throughout the day. By designing a lunch schedule with overlap between employees who interact a lot you can eliminate a lot of time spent on the phone and increase productivity. 
+Humanyze aims to use this data to build a more productive and better functioning work force. They believe by understanding how employees are interacting they can find ways to increase productivity and eliminate major stress factors. In an interview with Business Insider.<sup>[7]</sup> CEO Ben Waber gave an example of how they determined that employees spent less time calling each other if they had a little bit of extra face to face time throughout the day. By designing a lunch schedule with overlap between employees who interact a lot you can eliminate a lot of time spent on the phone and increase productivity. 
 
 
 ### StatusToday
 
-StatusToday is a tool based on the idea that employers and managers don’t understand their employees. StatusToday aims to fix this problem by using AI to analyse data about employees to better understand them and what they might need or how they are performing. StatusToday is also able to define and map relationships between employees to build a database of who is talking to who in the office and which employees hold the most social power [8].
+StatusToday is a tool based on the idea that employers and managers don’t understand their employees. StatusToday aims to fix this problem by using AI to analyse data about employees to better understand them and what they might need or how they are performing. StatusToday is also able to define and map relationships between employees to build a database of who is talking to who in the office and which employees hold the most social power.<sup>[8]</sup>
 
-StatusToday uses an AI named Isaak to analyse a range of data it gathers about employees. One of its goals is to identify which employees are being overworked and why, Isaak can identify if certain managers are delegating too much work and give feedback to employees on why they may be feeling overworked.[8] Isaak can also determine if an employee is working outside of office hours and risking burnout. Isaak aims to reduced burnout as much as possible by providing information on the sources of burnout. [8]
+StatusToday uses an AI named Isaak to analyse a range of data it gathers about employees. One of its goals is to identify which employees are being overworked and why, Isaak can identify if certain managers are delegating too much work and give feedback to employees on why they may be feeling overworked.<sup>[8]</sup> Isaak can also determine if an employee is working outside of office hours and risking burnout. Isaak aims to reduced burnout as much as possible by providing information on the sources of burnout.<sup>[8]</sup>
 
 Isaak also monitors office relationships to try and determine who is influential within the office. It creates a database of all employees that unlike Humanyze is not anonymised, this database ranks employees by the size of their circle, how critical they are, how connected they are and how much influence they hold in the office. This gives a very detailed overview of how exactly individual employees effect the social dynamic of the office and who is most critical to maintaining it. This can be used to determine candidates for managerial positions or to figure out which employees would be missed the least if let go.
 
-Like Humanyze StatusToday does not collect and record information from emails or phone calls, instead it simply analyses metadata to determine the context of the interaction. [8]
+Like Humanyze StatusToday does not collect and record information from emails or phone calls, instead it simply analyses metadata to determine the context of the interaction. <sup>[8]</sup>
 
 
 ### Atlassian 
