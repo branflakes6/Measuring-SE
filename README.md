@@ -1,16 +1,16 @@
 # Measuring-Software Engineering
 
 
-### Introduction
+## Introduction
 
 The idea of measuring software engineering has existed pretty much since Software Engineering began It is an idea that has evolved into an entire field with hundreds of methods and dozens of companies working on the problem.<sup>[1]</sup> Modern software companies place a lot of importance on being able to measure the quality of work being done by their employees, companies are paying a lot of money for their engineers and want to make sure they are getting the best out of them. Many companies exist to create new ways of measuring software engineering that they can sell to larger companies. The techniques and technologies produced by these companies have a lot of potential in making the process easier and could lead to better engineering standards and practices. However, there are many ethical questions and concerns that need to be answered.  
 
 In this report I will look at many ways to measure engineering, some of the original methods and ways of quantifying software as well as some new ideas. Some tools used to measure the engineers themselves who are working on the code base, how productive they are, what do they contribute to the company. Then lastly, I will discuss the ethics of all of this and give my opinions on whether I think these ideas should be embraced by the industry.
 
 
-### Algorithmic Approaches
+## Algorithmic Approaches
 
-## Lines of Code (LOC)
+### Lines of Code (LOC)
 
 One of the most basic approaches to measuring Software Engineering is source lines of code. There are two different ways of doing this, the first is physical source lines of code which is simply counting the number of lines of code in the code base. <sup>[1]</sup>  The second is logical lines of code which attempts to count the number of executable statements. <sup>[1]</sup>
 
@@ -48,7 +48,7 @@ Source lines of code as a metric is only useful when combined with other measure
 
 
 
-## ABC Method
+### ABC Method
 
 The ABC software metric was developed as an answer to issues with SLOC, it attempts to solve the problem with a more algorithmic approach that is much less simplistic.<sup>[4]</sup>
 
@@ -84,7 +84,7 @@ While ABC is a better metric for measuring software than simple SLOC it still ha
 
 
 
-### New Technologies and Companies
+## New Technologies and Companies
 
 Many modern solutions to measuring software engineering have abandoned the idea of using complex algorithms or techniques to measure the quality of the code itself. As discussed, it is simply too difficult a task due to the nature of software, differences in language and the type of work being done make most comparisons useless. The modern solution to this problem is to instead measure the engineers working on the software themselves. This means we are no longer looking just at the code been written but the efficiency of the engineers themselves, how hard they are working and what factors could be preventing them from doing better work. This combined with good code practices and mostly manual reviews of software been written is a much easier way to measure software engineering. 
 
@@ -122,7 +122,7 @@ Trello workflow management software that gives employees a way of tracking their
 Jira is an issue tracking software designed for tracking bugs in software projects. Jira allows engineers to create a list of bugs they are working on fixing, which ones still need to be done and which ones they are in the process of fixing. Much like Trello the data collected from Jira can be used to figure out an estimate of how long certain types of bugs should take to be fixed. It can also be used to identify which engineers are creating the most bugs as you can see which part of the code base contains the greatest number of bugs.
 
 
-### Ethics
+## Ethics
 
 The ethics of measuring software engineering is a complex topic that is not black or white, some approaches are ethical while others are not, but most are somewhere in the middle. 
 
