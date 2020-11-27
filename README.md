@@ -10,7 +10,7 @@ In this report I will look at many ways to measure engineering, some of the orig
 
 ### Algorithmic Approaches
 
-Lines of Code (LOC)
+## Lines of Code (LOC)
 
 One of the most basic approaches to measuring Software Engineering is source lines of code. There are two different ways of doing this, the first is physical source lines of code which is simply counting the number of lines of code in the code base. <sup>[1]</sup>  The second is logical lines of code which attempts to count the number of executable statements. <sup>[1]</sup>
 
@@ -47,7 +47,8 @@ Another example is the difference between a simple Object Orientated Java class 
 Source lines of code as a metric is only useful when combined with other measurements, if you impose strict coding practices on your engineers and ensure that everyone is writing the highest quality and most line efficient code they can then it can provide some insight into the complexity of your code base. For example, Windows NT 3.1 has about 5 million source lines of code while windows XP had about 45 million <sup>[3]</sup>, this provides some meaningful information on the scale of these projects and the number of engineers required to create and maintain them.
 
 
-ABC Method
+
+## ABC Method
 
 The ABC software metric was developed as an answer to issues with SLOC, it attempts to solve the problem with a more algorithmic approach that is much less simplistic.<sup>[4]</sup>
 
