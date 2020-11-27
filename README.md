@@ -56,7 +56,7 @@ The following equation is used to calucalte ABC values
 
 
 ```
-<ABCvector> = \sqrt{(a2 + b2 + c2)}
+<ABCvector> = √(a2 + b2 + c2)
 ```
 
 ABC evaluation has different rules depending on the programming language used, this is aimed at creating consistent scores across a range of languages. The goal of ABC is to measure the size of the software in a meaningful by evaluating all parts of the system rather than just lines of code. ABC accounts for things such as conditional operators, assignment operators and important keywords. This means it can tell the difference between the complexity of single lines of code. [4]
@@ -81,6 +81,43 @@ This demonstrates the clear difference in complexity between these lines and all
 While ABC is a better metric for measuring software than simple SLOC it still has many of the same drawbacks. Like SLOC if not used correctly it can encourage bad programming as it still rewards you for writing longer less efficient code, however the rewards are not as great with ABC so there is less incentive. Like SLOC, ABC is most valuable when used in combination with other methods and systems. If engineers are following good programming practice and their code is being monitored to ensure they are not trying to game the system, it can be a useful metric for determining its complexity.
 
 
+
+### New Technologies and Companies
+
+Many modern solutions to measuring software engineering have abandoned the idea of using complex algorithms or techniques to measure the quality of the code itself. As discussed, it is simply too difficult a task due to the nature of software, differences in language and the type of work being done make most comparisons useless. The modern solution to this problem is to instead measure the engineers working on the software themselves. This means we are no longer looking just at the code been written but the efficiency of the engineers themselves, how hard they are working and what factors could be preventing them from doing better work. This combined with good code practices and mostly manual reviews of software been written is a much easier way to measure software engineering. 
+
+
+### Humanyze 
+
+Humanyze was founded in 2010 and aims to measure software engineering by analysing engineers themselves rather than the code they write. 
+
+They achieve this using a badge that monitors employees at work. The Humanyze badge uses location data and speech recognition to gather data about employees. It can determine where employees are spending most of their time through out, they day, which departments are interacting with each other and the nature of these interactions. The Humanyze badge does not record conversations between employees but instead uses technology to analysis things such as the tone of voice of the people talking to try and determine the mood and nature of the conversation. This allows it to tell if employees are getting along well or are hostile to each other.
+
+The badge can track exactly what you have spent your time doing throughout the day, where you have been and who you interact with most. All this data is then analysed by Artificial Intelligence to tell employers if their employee dynamic is “healthy” [5]. They produce metrics about how happy employees are, how engaged they are and how productive they are. 
+
+Humanyze claim their badges protect employee privacy in several different ways [6]. Firstly, and most importantly they do not record any content from email, messages or voice calls [6].  Data is analysed based on things like tone of voice rather than the actual content of the call, emails and messaging are used mostly to determine which departments employees interact with the most and which ones are the largest source of problem [6]. Humanyze also does not provide any identifiable information to employers. The data is not presented on a person by person basis instead employers are given an overview of the entire company with aggregate information about the performance of the whole office [6]. Humanyze does however have a personal dashboard where you can see your own information and while employers can’t access this, they could request employees give them this data themselves [6]. Humanyze also does not track employees when they are in the bathroom and does all location tracking via beacons and not GPS. [6]
+
+Humanyze aims to use this data to build a more productive and better functioning work force. They believe by understanding how employees are interacting they can find ways to increase productivity and eliminate major stress factors. In an interview with Business Insider [7]. CEO Ben Waber gave an example of how they determined that employees spent less time calling each other if they had a little bit of extra face to face time throughout the day. By designing a lunch schedule with overlap between employees who interact a lot you can eliminate a lot of time spent on the phone and increase productivity. 
+
+
+### StatusToday
+
+StatusToday is a tool based on the idea that employers and managers don’t understand their employees. StatusToday aims to fix this problem by using AI to analyse data about employees to better understand them and what they might need or how they are performing. StatusToday is also able to define and map relationships between employees to build a database of who is talking to who in the office and which employees hold the most social power [8].
+
+StatusToday uses an AI named Isaak to analyse a range of data it gathers about employees. One of its goals is to identify which employees are being overworked and why, Isaak can identify if certain managers are delegating too much work and give feedback to employees on why they may be feeling overworked.[8] Isaak can also determine if an employee is working outside of office hours and risking burnout. Isaak aims to reduced burnout as much as possible by providing information on the sources of burnout. [8]
+
+Isaak also monitors office relationships to try and determine who is influential within the office. It creates a database of all employees that unlike Humanyze is not anonymised, this database ranks employees by the size of their circle, how critical they are, how connected they are and how much influence they hold in the office. This gives a very detailed overview of how exactly individual employees effect the social dynamic of the office and who is most critical to maintaining it. This can be used to determine candidates for managerial positions or to figure out which employees would be missed the least if let go.
+
+Like Humanyze StatusToday does not collect and record information from emails or phone calls, instead it simply analyses metadata to determine the context of the interaction. [8]
+
+
+### Atlassian 
+
+Atlassian are a software engineering company that has developed numerous tools designed to aid with and measure software engineering such as Jira and Trello. 
+
+Trello workflow management software that gives employees a way of tracking their work and deadlines. Trello provides its users with dozens of tools that allow them to create a work board of the various things they are working on. Users can break there projects down into individual components and set deadlines and expected completion times. Trello aids in the measurement of software engineering by giving companies and employees the ability to monitor exactly how long a task took to do. The engineer can set a deadline for themselves based on how long they think it will take and then mark the task complete when its finished. By taking all this data across an entire company and aggregating it you can begin to get an idea of how long certain tasks should take to do. This allows employers to compare the speed and efficiency of all their employees.
+
+Jira is an issue tracking software designed for tracking bugs in software projects. Jira allows engineers to create a list of bugs they are working on fixing, which ones still need to be done and which ones they are in the process of fixing. Much like Trello the data collected from Jira can be used to figure out an estimate of how long certain types of bugs should take to be fixed. It can also be used to identify which engineers are creating the most bugs as you can see which part of the code base contains the greatest number of bugs.
 
 
 
